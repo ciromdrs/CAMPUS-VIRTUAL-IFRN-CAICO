@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="capa">
+    <div class="capa-text">
+        <h1>
+            Construa seu <span class="destaque-verde">futuro</span> no 
+            <span class="destaque-borda">IFRN CAMPUS CAICÓ</span>
+        </h1>
+
+        <p>
+            Conheça o <strong>IFRN Campus Caicó</strong>, e descubra 
+            <strong>oportunidades</strong> que vão transformar seu <strong>futuro</strong>.
+        </p>
+    </div>
+</div>
+
+<div class="secao-cursos">
+
+    <h2>Nossos Cursos</h2>
+
+    <p class="subtitulo">
+        Conheça as áreas de ensino do IFRN Campus Caicó e descubra as oportunidades que cada curso oferece para o seu futuro.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/info.jpg') }}">
+            <div class="card-conteudo">
+                <h3>Informática para Internet</h3>
+                <p>Desenvolvimento de sites, sistemas e soluções digitais.</p>
+                <a href="#" class="btn">Ver curso</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/textil.jpg') }}">
+            <div class="card-conteudo">
+                <h3>Têxtil</h3>
+                <p>Produção e desenvolvimento de tecidos e materiais têxteis.</p>
+                <a href="#" class="btn">Ver curso</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/vestuario.jpg') }}">
+            <div class="card-conteudo">
+                <h3>Vestuário</h3>
+                <p>Criação e produção de roupas e peças de moda.</p>
+                <a href="#" class="btn">Ver curso</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/eletro.jpg') }}">
+            <div class="card-conteudo">
+                <h3>Eletrotécnica</h3>
+                <p>Instalação e manutenção de sistemas elétricos.</p>
+                <a href="#" class="btn">Ver curso</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="conteudo">
+    <h2>Bem-vindo ao nosso campus virtual</h2>
+    <p>
+        Aqui você vai conhecer os cursos, o campus e tudo que o IFRN Caicó oferece.
+    </p>
+
+    <p>
+        Explore nossos cursos e descubra qual combina com você!
+    </p>
+</div>
+
+<div class="mapa" id="localizacao">
+    <h2>Localização do Campus</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5985199130673!2d-37.0704752252474!3d-6.445563993545762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7afec3b2216fb6d%3A0xfd0a7ee7ca8257a9!2sIFRN%20Campus%20Caic%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1776724611315!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</div>
+
+<footer class="rodape">
+    <div class="conteudo-rodape">
+        <p>© 2026 IFRN - Campus Caicó. Todos os direitos reservados.</p>
+        <p>Desenvolvido por alunas do curso de Informática para Internet</p>    
+    </div>
+</footer>
+
+{% endblock %}
